@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-GB" style="height:100%;">
+<head>
+	<meta charset="utf-8">
+	<title>Tandem Newtown</title>
+	<meta name="description" content="Tandem Newtown">
+	<meta name="keywords" content="Tandem, Newtown">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<script defer src="fontawesome-all.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<style>
+	.back>img{
+		max-width:70%;
+		max-height:300px;
+	}
+	.grey.back{
+		background-color:#1c1f24;
+		color:#ffffff;
+	}
+	.white.back{
+		background-color:#1c1f24;
+		color:#ffffff;
+	}
+		body {
+		opacity:0;
+			transition:opacity 1s;
+		}
+		body>*{
+			text-align:center;
+		}
+		h1, p {
+			font-family: 'Open Sans', sans-serif;
+		}
+		body {
+			width: 100%;
+			height: 100%;
+			margin:0;
+			display:flex;
+			flex-direction:column;
+			justify-content: center ;
+			align-items: center ;
+		}
+		a { color: inherit; } 
+		.socials {
+			display:flex;
+			flex-direction:row;
+			justify-content: center ;
+			align-items: center ;
+			
+		}
+		.socials > a{
+			margin:10px;		
+		}
+	</style>
+</head>
+<body class="grey back"	onload="load();">
+		<img src="tandem.jpg" alt="Tandem">
+		<p style="text-align: center;">Opening soon</p>
+		<!--p style="text-align: center;">127 King Street Newtown, New South Wales</p-->
+		<div class="socials">
+			<a href="http://instagram.com/tandemnewtown" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+			<a href="http://facebook.com/tandemnewtown" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+		</div>
+		<script defer>
+				setTimeout(function(){document.getElementsByTagName("BODY")[0].style.opacity=1;},500);
+
+		</script>
+</body>
+
+</html>

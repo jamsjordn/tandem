@@ -12,25 +12,27 @@
 	<style>
 	.back>img{
 		max-width:70%;
-		max-height:300px;
+		max-height:30%;
+		
 	}
 	.grey.back{
-		background-color:#1c1f24;
+		background-color:#1a1f23;
 		color:#ffffff;
 	}
 	.white.back{
-		background-color:#1c1f24;
+		background-color:#1a1f23;
 		color:#ffffff;
 	}
 		body {
 		opacity:0;
-			transition:opacity 1s;
+			transition:opacity 3.5s;
 		}
 		body>*{
 			text-align:center;
 		}
 		h1, p {
 			font-family: 'Open Sans', sans-serif;
+			font-size:1.1em;
 		}
 		body {
 			width: 100%;
@@ -41,7 +43,9 @@
 			justify-content: center ;
 			align-items: center ;
 		}
-		a { color: inherit; } 
+		a { color: inherit;
+			cursor:pointer;
+			text-decoration-line:none;} 
 		.socials {
 			display:flex;
 			flex-direction:row;
@@ -57,10 +61,11 @@
 <body class="grey back"	onload="load();">
 		<img src="tandem.jpg" alt="Tandem">
 		<p style="text-align: center;">Opening soon</p>
-		<!--p style="text-align: center;">127 King Street Newtown, New South Wales</p-->
+		<p><a href="mailto:community@tandemnewtown.com">community@tandemnewtown.com</a></p>
+		<p><a href="https://www.google.com/maps/search/?api=1&query=127+King+St+Newtown+NSW+AUSTRALIA&query_place_id=ChIJB1uAgC2wEmsRZM7C-EVI0ms" target="_blank">127 King St, Newtown</a></p>
 		<div class="socials">
-			<a href="http://instagram.com/tandemnewtown" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
-			<a href="http://facebook.com/tandemnewtown" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+			<a href="http://instagram.com/tandemnewtown" target="_blank"><i aria-label="Instagram" class="fab fa-instagram fa-2x"></i></a>
+			<a href="http://facebook.com/tandemnewtown" target="_blank"><i aria-label="Facebook" class="fab fa-facebook-f fa-2x"></i></a>
 		</div>
 		<script defer>
 				setTimeout(function(){document.getElementsByTagName("BODY")[0].style.opacity=1;},500);

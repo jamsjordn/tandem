@@ -31,8 +31,17 @@
 			--foreground-color: white;
 		}
 
+		@media (prefers-color-scheme: light) {
+			:root {
+				--background-color: rgb(233, 234, 233);
+				--foreground-color: black;
+				--background-color: white;
+				--foreground-color: #1a1f23;
+			}
+		}
+
 		.back>svg {
-			max-width: 70%;
+			max-width: 400px;
 			max-height: 30%;
 			padding-bottom: 20px;
 		}
